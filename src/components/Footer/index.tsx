@@ -20,7 +20,7 @@ const socialIcons: ISocialIcons[] = [
 const Footer = () => {
     return (
         <div className='w-[90%] mx-auto font-poppins'>
-            <div className='flex justify-between py-20'>
+            <div className='md:flex justify-between py-20'>
                 <div>
                     <Logo />
                     <div className='flex gap-5 mt-14'>

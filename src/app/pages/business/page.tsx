@@ -10,6 +10,10 @@ import currency from '@/public/svgs/currency.svg';
 import cal from '@/public/svgs/cal.svg';
 import Banner from '@/components/Card/Banner';
 import TabComponent from '@/components/TabComponent';
+import Image from 'next/image';
+import business from '@/public/images/business.png';
+import cirle from '@/public/svgs/half-circle.svg';
+import { AnimateSlider } from '@/components/motion/Animate';
 
 interface ITabs {
   title: string
@@ -25,17 +29,30 @@ const tabs: ITabs[] = [
 
 const Business = () => {
     return (
-        <div className='font-poppins'>
+        <div className='font-poppins overflow-x-hidden'>
             <Header />
             <div className='bg-main-1 h-screen relative text-white'>
                 <div className='flex items-center h-full justify-center flex-col'>
-                    <h1 className='text-[46px] text-center w-[48%] leading-[64px] font-semibold'>Manage payroll, compliance & HR in real time</h1>
-                    <p className='text-lg w-[40%] mt-6 mb-10 text-center'>Make income tax remittances to the state internal revenue service for your employees.</p>
-                    <PrimaryButton />
-                    {/* <div className='border mt-20 relative z-50 border-main-3 h-[574px] w-[70%] mx-auto' /> */}
+                    <AnimateSlider>
+                        <div className='text-[46px] flex justify-center text-center w-full leading-[64px] font-semibold'>
+                            <h1 className='w-[65%]'>Manage payroll, compliance & HR in real time</h1>
+                        </div>
+                    </AnimateSlider>
+                    <AnimateSlider><div className='text-lg flex justify-center w-full mt-6 mb-10 text-center'>
+                        <p className='flex justify-center w-[60%]'>Make income tax remittances to the state internal revenue service for your employees.</p>
+                    </div></AnimateSlider>
+                <AnimateSlider><PrimaryButton /></AnimateSlider>
+                </div>
+                <div className='absolute bottom-0 right-0'>
+                    <Image src={cirle} alt='taxit business page' />
                 </div>
             </div>
-            <div className='w-[90%] mx-auto'>
+            <AnimateSlider>
+                <div className='w-[70%] relative mx-auto h-[544px] -mt-52'>
+                    <Image className='w-full h-full rounded-md bg-cover bg-no-repeat object-fill' src={business} alt='taxit business banner' />
+                </div>
+            </AnimateSlider>
+            <div className='w-[90%] mx-auto pt-20'>
                 <h2 className='mt-14 text-center text-4xl leading-[44px] text-main-6 font-semibold'>Payments tools designed for you</h2>
                 <p className='text-center text-lg leading-[28.8px] text-main-6'>Explore payment features that provides you with every possible solution</p>
                 <div className='grid grid-cols-3 gap-10 mt-10'>
@@ -55,8 +72,8 @@ const Business = () => {
                         description="Transacting takes only a few seconds - it's convenient and safe."
                     />
                 </div>
-                <TabComponent tabs={tabs} img={cal}  />
-            <Banner />
+                <TabComponent tabs={tabs} img={cal} />
+                <Banner />
             </div>
             <Footer />
         </div>
