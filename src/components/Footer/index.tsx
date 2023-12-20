@@ -43,7 +43,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <p className='text-main-5 text-lg leading-[22px] font-semibold'>About Us</p>
+                        <p className='text-main-5 text-lg leading-[22px] font-semibold'>Products</p>
                         <div className='text-main-4 my-5 text-base leading-6'>
                             <Link href="/">TBook®</Link>
                         </div>

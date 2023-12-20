@@ -10,7 +10,6 @@ beforeAll(() => {
   }));
 });
 
-
 test("render busienss page", () => {
     render(<Business />);
 
@@ -19,4 +18,6 @@ test("render busienss page", () => {
     expect(screen.getByText(/login/i)).toBeInTheDocument();
     expect(screen.getByText(/manage payroll, compliance & HR in real time/i)).toBeInTheDocument();
     expect(screen.getByText(/make income tax remittances to the state internal revenue service for your employees./i)).toBeInTheDocument();
+    expect(screen.getByText(/products/i)).toBeInTheDocument();
+    expect(screen.getByText(/legal & privacy/i)).toBeInTheDocument();
 });

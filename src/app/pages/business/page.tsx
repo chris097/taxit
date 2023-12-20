@@ -12,6 +12,7 @@ import cirle from '@/public/svgs/half-circle.svg';
 import { AnimateSlider } from '@/components/motion/Animate';
 import Payment from '@/components/Payment';
 
+
 interface ITabs {
   title: string
   description: string
@@ -38,7 +39,7 @@ const Business:React.FC = () => {
                     <AnimateSlider><div className='md:text-lg text-base flex justify-center w-full mt-6 mb-10 text-center'>
                         <p className='flex justify-center md:w-[60%] w-[90%]'>Make income tax remittances to the state internal revenue service for your employees.</p>
                     </div></AnimateSlider>
-                <AnimateSlider><PrimaryButton /></AnimateSlider>
+                    <AnimateSlider><PrimaryButton /></AnimateSlider>
                 </div>
                 <div className='absolute bottom-0 right-0'>
                     <Image src={cirle} alt='taxit business page' />

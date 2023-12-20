@@ -10,13 +10,14 @@ beforeAll(() => {
   }));
 });
 
-
 test("render Home page", () => {
-    render(<Home />);
+  render(<Home />);
 
-    expect(screen.getByText(/for individuals/i)).toBeInTheDocument();
-    expect(screen.getByText(/for businesses/i)).toBeInTheDocument();
-    expect(screen.getByText(/login/i)).toBeInTheDocument();
-    expect(screen.getByText(/Paying your bills has never been so easy./i)).toBeInTheDocument();
-    expect(screen.getByText(/Providing you with the best online payment experience/i)).toBeInTheDocument();
+  expect(screen.getByText(/for individuals/i)).toBeInTheDocument();
+  expect(screen.getByText(/for businesses/i)).toBeInTheDocument();
+  expect(screen.getByText(/login/i)).toBeInTheDocument();
+  expect(screen.getByText(/Paying your bills has never been so easy./i)).toBeInTheDocument();
+  expect(screen.getByText(/Providing you with the best online payment experience/i)).toBeInTheDocument();
+  expect(screen.getByText(/products/i)).toBeInTheDocument();
+  expect(screen.getByText(/legal & privacy/i)).toBeInTheDocument();
 });

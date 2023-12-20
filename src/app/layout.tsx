@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Taxit | Homepage',
   description: 'Taxit UI design implemented by Christian Chiemela with Next.JS, Typyescript, React-Testing-Library, TailwindCSS and Framer Motion',
   icons: {
-    icon: './logo.svg',
+    icon: '/logo.png',
   }
 }
 
