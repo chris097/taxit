@@ -62,7 +62,7 @@ const Header: React.FC = () => {
                     </nav>
                 </div>
                 <div className='md:flex hidden gap-7 text-base items-center'>
-                    <button> <Link href="/">About Us</Link></button>
+                    <button role='about' type='button'> <Link href="/">About Us</Link></button>
                     <button><Link href="/">Contact</Link></button>
                     <div className='border-l-2 border-white h-[27px]' />
                     <button><Link href="/">Login</Link></button>

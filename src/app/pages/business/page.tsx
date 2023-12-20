@@ -24,11 +24,11 @@ const tabs: ITabs[] = [
   { title: 'Reports', description: 'Generates relevant reports, such as PAYE Returns for easy compliance with filing obligations.' },
 ];
 
-const Business = () => {
+const Business:React.FC = () => {
     return (
-        <div className='font-poppins overflow-x-hidden'>
+        <main className='font-poppins overflow-x-hidden'>
             <Header />
-            <div className='bg-main-1 h-screen relative text-white'>
+            <div role='business page' className='bg-main-1 h-screen relative text-white'>
                 <div className='flex items-center h-full justify-center flex-col'>
                     <AnimateSlider>
                         <div className='md:text-[46px] text-4xl flex justify-center text-center w-full md:leading-[64px] leading-[44px] font-semibold'>
@@ -55,7 +55,7 @@ const Business = () => {
                 <Banner />
             </div>
             <Footer />
-        </div>
+        </main>
     );
 };
 
