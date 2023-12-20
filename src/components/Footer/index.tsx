@@ -23,16 +23,16 @@ const Footer = () => {
             <div className='md:flex justify-between py-20'>
                 <div>
                     <Logo />
-                    <div className='flex gap-5 mt-14'>
+                    <div className='md:flex hidden gap-5 mt-14'>
                         {socialIcons.map((icon, index) => (
                         <Link key={index} href="/">
                             <Image src={icon.icon} alt={`taxit ${icon.name} links`} />
                         </Link>
                     ))}
                     </div>
-                    <p className='text-main-4 text-base leading-6 mt-4'>2015-2022 Taxaide Technologies Limited. All rights reserved</p>
+                    <p className='text-main-4 md:block hidden text-base leading-6 mt-4'>2015-2022 Taxaide Technologies Limited. All rights reserved</p>
                 </div>
-                <div className='flex gap-20'>
+                <div className='flex gap-20 md:mt-0 mt-10'>
                     <div>
                         <p className='text-main-5 text-lg leading-[22px] font-semibold'>About Us</p>
                         <div className='text-main-4 my-5 text-base leading-6'>
@@ -55,6 +55,14 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                <div className='md:hidden flex justify-center gap-5 mt-5'>
+                        {socialIcons.map((icon, index) => (
+                        <Link key={index} href="/">
+                            <Image src={icon.icon} alt={`taxit ${icon.name} links`} />
+                        </Link>
+                    ))}
+                    </div>
+                <p className='text-main-4 md:hidden block text-base leading-6 mt-10 text-center'>2015-2022 Taxaide Technologies Limited. All rights reserved</p>
             </div>
         </div>
     );

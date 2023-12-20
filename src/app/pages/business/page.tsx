@@ -3,10 +3,6 @@ import React from 'react';
 import PrimaryButton from '@/components/Button/PrimaryButton';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import Card from '@/components/Card';
-import phone from '@/public/svgs/phone.svg';
-import secure from '@/public/svgs/secure.svg';
-import currency from '@/public/svgs/currency.svg';
 import cal from '@/public/svgs/cal.svg';
 import Banner from '@/components/Card/Banner';
 import TabComponent from '@/components/TabComponent';
@@ -14,6 +10,7 @@ import Image from 'next/image';
 import business from '@/public/images/business.png';
 import cirle from '@/public/svgs/half-circle.svg';
 import { AnimateSlider } from '@/components/motion/Animate';
+import Payment from '@/components/Payment';
 
 interface ITabs {
   title: string
@@ -34,12 +31,12 @@ const Business = () => {
             <div className='bg-main-1 h-screen relative text-white'>
                 <div className='flex items-center h-full justify-center flex-col'>
                     <AnimateSlider>
-                        <div className='text-[46px] flex justify-center text-center w-full leading-[64px] font-semibold'>
-                            <h1 className='w-[65%]'>Manage payroll, compliance & HR in real time</h1>
+                        <div className='md:text-[46px] text-4xl flex justify-center text-center w-full md:leading-[64px] leading-[44px] font-semibold'>
+                            <h1 className='md:w-[65%] w-[90%]'>Manage payroll, compliance & HR in real time</h1>
                         </div>
                     </AnimateSlider>
-                    <AnimateSlider><div className='text-lg flex justify-center w-full mt-6 mb-10 text-center'>
-                        <p className='flex justify-center w-[60%]'>Make income tax remittances to the state internal revenue service for your employees.</p>
+                    <AnimateSlider><div className='md:text-lg text-base flex justify-center w-full mt-6 mb-10 text-center'>
+                        <p className='flex justify-center md:w-[60%] w-[90%]'>Make income tax remittances to the state internal revenue service for your employees.</p>
                     </div></AnimateSlider>
                 <AnimateSlider><PrimaryButton /></AnimateSlider>
                 </div>
@@ -48,30 +45,12 @@ const Business = () => {
                 </div>
             </div>
             <AnimateSlider>
-                <div className='w-[70%] relative mx-auto h-[544px] -mt-52'>
+                <div className='lgw-[70%] w-[85%] relative mx-auto md:h-[544px] h-[320px] md:-mt-52 -mt-44'>
                     <Image className='w-full h-full rounded-md bg-cover bg-no-repeat object-fill' src={business} alt='taxit business banner' />
                 </div>
             </AnimateSlider>
             <div className='w-[90%] mx-auto pt-20'>
-                <h2 className='mt-14 text-center text-4xl leading-[44px] text-main-6 font-semibold'>Payments tools designed for you</h2>
-                <p className='text-center text-lg leading-[28.8px] text-main-6'>Explore payment features that provides you with every possible solution</p>
-                <div className='grid grid-cols-3 gap-10 mt-10'>
-                    <Card
-                        icon={phone}
-                        title='User Friendly'
-                        description='Highly responsive and easy to navigate'
-                    />
-                    <Card
-                        icon={secure}
-                        title='Secure'
-                        description='Your data is secure. It is continuously monitored, audited, and stored in an encrypted form.'
-                    />
-                    <Card
-                        icon={currency}
-                        title='Fast'
-                        description="Transacting takes only a few seconds - it's convenient and safe."
-                    />
-                </div>
+                <Payment />
                 <TabComponent tabs={tabs} img={cal} />
                 <Banner />
             </div>
