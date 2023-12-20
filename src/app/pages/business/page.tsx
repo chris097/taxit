@@ -45,8 +45,8 @@ const Business:React.FC = () => {
                 </div>
             </div>
             <AnimateSlider>
-                <div className='lgw-[70%] w-[85%] relative mx-auto md:h-[544px] h-[320px] md:-mt-52 -mt-44'>
-                    <Image className='w-full h-full rounded-md bg-cover bg-no-repeat object-fill' src={business} alt='taxit business banner' />
+                <div className='md:w-[70%] w-[85%] relative mx-auto md:h-[544px] h-[320px] md:-mt-52 -mt-44'>
+                    <Image className='w-full h-full rounded-md bg-cover bg-no-repeat object-cover' src={business} alt='taxit business banner' />
                 </div>
             </AnimateSlider>
             <div className='w-[90%] mx-auto pt-20'>
