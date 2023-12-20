@@ -30,9 +30,9 @@ export default function Home() {
   return (
     <main className='font-poppins overflow-x-hidden'>
       <Header />
-      <div className='bg-main-1 md:h-screen h-auto'>
-        <div className='items-center md:flex justify-between pt-32 pb-10 h-full w-[90%] mx-auto'>
-            <div className='font-poppins text-white md:w-[40%]'>
+      <div className='bg-main-1 h-auto'>
+        <div className='items-center lg:flex justify-between pt-32 pb-10 h-full w-[90%] mx-auto'>
+            <div className='font-poppins text-white lg:w-[40%]'>
           <AnimateSlider>
             <h1 className='md:text-[46px] text-4xl font-semibold md:leading-[64px] leading-10'>Secure & seamless online transactions</h1>
           </AnimateSlider>

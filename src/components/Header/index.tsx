@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                 <div className='flex gap-20 items-center'>
                     <Logo />
                     <nav role='navigation links' className='text-base font-semibold'>
-                        <ul className='md:flex hidden text-center gap-10'>
+                        <ul className='lg:flex hidden text-center gap-10'>
                             <li className={pathname === '/' ? 'border-b-[4px] leading-6 border-main-3 w-[139px]' : ''}>
                                 <Link href="/">For Individuals</Link>
                             </li>
@@ -61,14 +61,14 @@ const Header: React.FC = () => {
                         </ul>
                     </nav>
                 </div>
-                <div className='md:flex hidden gap-7 text-base items-center'>
+                <div className='lg:flex hidden gap-7 text-base items-center'>
                     <button role='about' type='button'> <Link href="/">About Us</Link></button>
                     <button><Link href="/">Contact</Link></button>
                     <div className='border-l-2 border-white h-[27px]' />
                     <button><Link href="/">Login</Link></button>
                     <PrimaryButton />
                 </div>
-                    <div onClick={() => setViewMobileNav(!viewMobileNav)} role='open menu bar' className='md:hidden text-main-3 text-4xl block'>
+                    <div onClick={() => setViewMobileNav(!viewMobileNav)} role='open menu bar' className='lg:hidden text-main-3 text-4xl block'>
                         <IoIosMenu />
                 </div>
             </div>

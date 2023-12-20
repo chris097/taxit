@@ -28,8 +28,8 @@ const Business:React.FC = () => {
     return (
         <main className='font-poppins overflow-x-hidden'>
             <Header />
-            <div role='business page' className='bg-main-1 h-screen relative text-white'>
-                <div className='flex items-center h-full justify-center flex-col'>
+            <div role='business page' className='bg-main-1 h-auto relative text-white'>
+                <div className='flex items-center h-full justify-center flex-col py-48'>
                     <AnimateSlider>
                         <div className='md:text-[46px] text-4xl flex justify-center text-center w-full md:leading-[64px] leading-[44px] font-semibold'>
                             <h1 className='md:w-[65%] w-[90%]'>Manage payroll, compliance & HR in real time</h1>
@@ -45,7 +45,7 @@ const Business:React.FC = () => {
                 </div>
             </div>
             <AnimateSlider>
-                <div className='md:w-[70%] w-[85%] relative mx-auto md:h-[544px] h-[320px] md:-mt-52 -mt-44'>
+                <div className='md:w-[70%] w-[85%] relative mx-auto md:h-[544px] h-[320px] md:-mt-36 -mt-36'>
                     <Image className='w-full h-full rounded-md bg-cover bg-no-repeat object-cover' src={business} alt='taxit business banner' />
                 </div>
             </AnimateSlider>
