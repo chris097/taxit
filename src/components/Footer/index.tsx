@@ -25,7 +25,7 @@ const Footer = () => {
                     <Logo />
                     <div className='flex gap-5 mt-14'>
                         {socialIcons.map((icon, index) => (
-                        <Link href="/">
+                        <Link key={index} href="/">
                             <Image src={icon.icon} alt={`taxit ${icon.name} links`} />
                         </Link>
                     ))}
